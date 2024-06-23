@@ -1,0 +1,18 @@
+<div class="container">
+    <h1 (click)="ngOnInit()">Albums Data Display using Angular</h1>
+    
+<table class="table table-bordered" [ngClass]="'table'" style="margin:auto">
+    <tr>
+        <th>UserId</th>
+        <th>Id</th>
+        <th>Title</th>
+
+    </tr>
+        <tr *ngFor="let i of a" [ngClass]="'trr'">
+            <td>{{i.userId}}</td>
+            <td>{{i.id}}</td>
+            <td>{{i.title}}</td>
+        </tr>
+</table>
+
+</div>
